@@ -1,0 +1,12 @@
+evidence_family,sources,environments,methods,seeds,train_runs,train_episodes_per_run,train_trajectories,eval_rows,sample_eval_episodes,greedy_eval_episodes,extra_model_fit_trajectories,heldout_model_eval_trajectories,note
+Local exact/oracle diagnostics,local_experiments.csv,2,8,32,512,800,409600,20992,1343488,20992,0,0,Exact reward or critic queries are accounted separately in query_budget.csv.
+Local learned diagnostics,local_experiments.csv,2,4,32,256,800,204800,10496,671744,10496,524288,0,Each learned method fits a quadratic reward model from 2048 uniform trajectories.
+Learned critic sample sweep,learned_critic_sample_sweep*.csv,2,2,8,128,400,51200,2688,172032,2688,522240,32768,Includes policy-run critic fits plus separate held-out model fits.
+Pruned learned ACCT diagnostic,pruned_learned_acct*.csv,2,3,32,192,800,153600,7872,503808,7872,393216,0,Local learned-credit diagnostic comparing top-fraction pruned ACCT against learned ACCT and learned AT-CF.
+Pruned fraction sensitivity,pruned_fraction_sensitivity*.csv,2,1,32,192,800,153600,7872,503808,7872,393216,0,Local sensitivity diagnostic for learned-pruned ACCT top-fraction choices.
+Distractor scaling stress test,distractor_scaling*.csv,4,4,32,512,800,409600,20992,1343488,20992,0,0,Local stress diagnostic that increases irrelevant agent-time pairs while holding relevant pairs fixed.
+Influence perturbation diagnostics,influence_perturbation*.csv,2,2,16,320,400,128000,6720,430080,6720,0,0,Exact local diagnostic perturbing counterfactual-influence scale and noise.
+MPE2 smoke diagnostics,mpe_delayed_results.csv+mpe_ppo_results.csv+mpe_mappo_results.csv,2,13,8,104,300,31200,472,0,1736,0,0,Sample returns are from training episodes or batches; greedy evaluation uses extra environment episodes.
+LBF stress test,lbf_ppo_results.csv,1,3,8,24,500,12000,72,0,576,0,0,"Tiny external-environment stress test, not tuned benchmark evidence."
+RWARE stress test,rware_ppo_results.csv,1,3,8,24,300,7200,48,0,384,0,0,Tiny external-environment stress test with zero-return outcome.
+Medium benchmark suite,medium_mpe_ppo_results.csv+medium_mpe_mappo_results.csv+medium_lbf_ppo_results.csv+medium_rware_ppo_results.csv,4,16,16,256,1000+600,192000,960,0,6240,0,0,"Medium local suite requested for paper polish: MPE2 at 600 episodes and LBF/RWARE at 1000 episodes, all with 16 seeds when present."

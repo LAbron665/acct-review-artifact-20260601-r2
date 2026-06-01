@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "script_returncode": 0,
+  "epymarl_repository": "https://github.com/uoe-agents/epymarl.git",
+  "epymarl_commit": "cbc38c09588064eab978501d0f12c2cf58fa7fc2",
+  "algorithm": "mappo",
+  "learner": "ppo_learner",
+  "environment": "gymma",
+  "env_key": "lbforaging:Foraging-5x5-2p-1f-v3",
+  "time_limit": 5,
+  "t_max": 20,
+  "batch_size": 1,
+  "batch_size_run": 1,
+  "standardise_rewards": false,
+  "seed": 544059924,
+  "acct_patch_applied": true,
+  "use_acct": true,
+  "acct_smoke_mode": "learned_q_head",
+  "acct_influence_source": "learned_q_head",
+  "acct_lambda": 0.9,
+  "acct_residual_weight": 0.1,
+  "acct_transport_mode": "absolute",
+  "acct_standardize": "masked",
+  "final_metrics": {
+    "return_mean": {
+      "step": 25,
+      "value": 0.0
+    },
+    "test_return_mean": {
+      "step": 25,
+      "value": 1.0
+    },
+    "ep_length_mean": {
+      "step": 25,
+      "value": 5.0
+    },
+    "test_ep_length_mean": {
+      "step": 25,
+      "value": 1.0
+    },
+    "critic_loss": {
+      "step": 25,
+      "value": 0.0008805569959804416
+    },
+    "td_error_abs": {
+      "step": 25,
+      "value": 0.02220988869667053
+    },
+    "pg_loss": {
+      "step": 25,
+      "value": -0.028898943215608597
+    },
+    "agent_grad_norm": {
+      "step": 25,
+      "value": 0.8324636220932007
+    },
+    "critic_grad_norm": {
+      "step": 25,
+      "value": 0.1829327940940857
+    },
+    "acct_q_loss": {
+      "step": 25,
+      "value": 0.0341307707130909
+    },
+    "acct_q_grad_norm": {
+      "step": 25,
+      "value": 2.5099000930786133
+    }
+  },
+  "notes": [
+    "Tiny framework smoke test only; not a benchmark-quality result.",
+    "The run verifies EPyMARL MAPPO/gymma/LBF learner execution on this machine.",
+    "No personal filesystem paths or hostnames are stored in this summary.",
+    "ACCT used a tiny learned actual-action Q head and counterfactual action replacements for smoke testing; it is not a tuned benchmark."
+  ]
+}

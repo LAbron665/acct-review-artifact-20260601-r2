@@ -1,0 +1,11 @@
+env,method,metric,mean,std,seeds,final_episode
+delayed_simple_spread,ppo_shared,greedy_final,-0.9714,0.1600,16,600
+delayed_simple_spread,ppo_shared,sample_final,-0.9974,0.0927,16,600
+delayed_simple_spread,ppo_learned_agent_time_cf,greedy_final,-0.8887,0.1162,16,600
+delayed_simple_spread,ppo_learned_agent_time_cf,sample_final,-0.9586,0.0843,16,600
+delayed_simple_spread,ppo_learned_agent_shapley,greedy_final,-0.9083,0.1097,16,600
+delayed_simple_spread,ppo_learned_agent_shapley,sample_final,-0.9716,0.1149,16,600
+delayed_simple_spread,ppo_learned_acct,greedy_final,-0.8820,0.1484,16,600
+delayed_simple_spread,ppo_learned_acct,sample_final,-0.9713,0.1128,16,600
+delayed_simple_spread,ppo_learned_directional_acct,greedy_final,-0.9016,0.1092,16,600
+delayed_simple_spread,ppo_learned_directional_acct,sample_final,-0.9404,0.0984,16,600

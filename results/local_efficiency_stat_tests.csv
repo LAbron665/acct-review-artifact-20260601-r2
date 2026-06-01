@@ -1,0 +1,43 @@
+env,comparison,metric,mean_diff,ci95_low,ci95_high,win_rate,paired_seeds
+delayed_lever,ACCT - uniform transport,sample_auc,1.1161,1.1092,1.1227,1.0000,32
+delayed_lever,ACCT - uniform transport,greedy_auc,0.0258,0.0191,0.0333,0.8750,32
+delayed_lever,ACCT - CF transport-only,sample_auc,0.4444,0.4202,0.4691,1.0000,32
+delayed_lever,ACCT - CF transport-only,greedy_auc,0.0888,0.0688,0.1099,0.9062,32
+delayed_lever,ACCT - CF transport-only,first_sample_ge_threshold,-286.2500,-301.8750,-270.6250,1.0000,32
+delayed_lever,ACCT - return-eq CF transport,sample_auc,1.1829,1.1693,1.1955,1.0000,32
+delayed_lever,ACCT - return-eq CF transport,greedy_auc,0.8196,0.6958,0.9399,1.0000,32
+delayed_lever,ACCT - agent-time CF,sample_auc,0.0378,0.0350,0.0406,1.0000,32
+delayed_lever,ACCT - agent-time CF,greedy_auc,0.0000,0.0000,0.0000,0.0000,32
+delayed_lever,ACCT - agent-time CF,first_sample_ge_threshold,-11.2500,-16.8750,-6.2500,0.4375,32
+delayed_lever,ACCT - sampled Shapley,sample_auc,0.0403,0.0348,0.0460,1.0000,32
+delayed_lever,ACCT - sampled Shapley,greedy_auc,0.0000,0.0000,0.0000,0.0000,32
+delayed_lever,ACCT - sampled Shapley,first_sample_ge_threshold,-11.8750,-18.7500,-5.0000,0.5312,32
+delayed_lever,Learned ACCT - learned CF transport,sample_auc,0.4648,0.4464,0.4845,1.0000,32
+delayed_lever,Learned ACCT - learned CF transport,greedy_auc,0.0440,0.0316,0.0573,0.9062,32
+delayed_lever,Learned ACCT - learned CF transport,first_sample_ge_threshold,-313.1250,-329.3750,-296.8750,1.0000,32
+delayed_lever,Learned ACCT - learned return-eq CF transport,sample_auc,1.0508,1.0326,1.0688,1.0000,32
+delayed_lever,Learned ACCT - learned return-eq CF transport,greedy_auc,0.1585,0.1156,0.2088,1.0000,32
+delayed_lever,Learned ACCT - learned AT-CF,sample_auc,0.0517,0.0487,0.0547,1.0000,32
+delayed_lever,Learned ACCT - learned AT-CF,greedy_auc,0.0000,0.0000,0.0000,0.0000,32
+delayed_lever,Learned ACCT - learned AT-CF,first_sample_ge_threshold,-13.7500,-19.3750,-8.7500,0.5312,32
+pair_gate,ACCT - uniform transport,sample_auc,1.3271,1.3203,1.3339,1.0000,32
+pair_gate,ACCT - uniform transport,greedy_auc,0.0328,0.0220,0.0447,0.7500,32
+pair_gate,ACCT - CF transport-only,sample_auc,0.8655,0.8418,0.8891,1.0000,32
+pair_gate,ACCT - CF transport-only,greedy_auc,0.0319,0.0213,0.0435,0.7500,32
+pair_gate,ACCT - CF transport-only,first_sample_ge_threshold,-528.0000,-544.6667,-511.3333,1.0000,30
+pair_gate,ACCT - return-eq CF transport,sample_auc,1.2607,1.2526,1.2686,1.0000,32
+pair_gate,ACCT - return-eq CF transport,greedy_auc,0.0719,0.0474,0.1008,0.8438,32
+pair_gate,ACCT - agent-time CF,sample_auc,0.0627,0.0586,0.0668,1.0000,32
+pair_gate,ACCT - agent-time CF,greedy_auc,0.0000,0.0000,0.0000,0.0000,32
+pair_gate,ACCT - agent-time CF,first_sample_ge_threshold,-26.8750,-33.7500,-20.0000,0.7188,32
+pair_gate,ACCT - sampled Shapley,sample_auc,0.0582,0.0507,0.0660,1.0000,32
+pair_gate,ACCT - sampled Shapley,greedy_auc,-0.0134,-0.0161,-0.0105,0.0000,32
+pair_gate,ACCT - sampled Shapley,first_sample_ge_threshold,-23.7500,-33.1250,-14.3750,0.6875,32
+pair_gate,Learned ACCT - learned CF transport,sample_auc,0.8893,0.8702,0.9082,1.0000,32
+pair_gate,Learned ACCT - learned CF transport,greedy_auc,0.0322,0.0220,0.0442,0.8438,32
+pair_gate,Learned ACCT - learned CF transport,first_sample_ge_threshold,-550.0000,-560.0000,-540.0000,1.0000,2
+pair_gate,Learned ACCT - learned return-eq CF transport,sample_auc,1.1272,1.1182,1.1365,1.0000,32
+pair_gate,Learned ACCT - learned return-eq CF transport,greedy_auc,0.0405,0.0276,0.0555,0.8438,32
+pair_gate,Learned ACCT - learned AT-CF,sample_auc,0.1003,0.0964,0.1042,1.0000,32
+pair_gate,Learned ACCT - learned AT-CF,greedy_auc,0.0000,0.0000,0.0000,0.0000,32
+pair_gate,Learned ACCT - learned AT-CF,first_sample_ge_threshold,-38.7500,-49.3750,-29.3750,0.8438,32

@@ -1,0 +1,5 @@
+env,episode,metric,comparison,mean_diff,ci95_low,ci95_high,win_rate,paired_seeds
+rware-tiny-2ag-easy-v2,300,sample_return,rware_ppo_learned_acct - rware_ppo_shared,0.0000,0.0000,0.0000,0.0000,8
+rware-tiny-2ag-easy-v2,300,greedy_return,rware_ppo_learned_acct - rware_ppo_shared,0.0000,0.0000,0.0000,0.0000,8
+rware-tiny-2ag-easy-v2,300,sample_return,rware_ppo_learned_agent_time_cf - rware_ppo_shared,0.0000,0.0000,0.0000,0.0000,8
+rware-tiny-2ag-easy-v2,300,greedy_return,rware_ppo_learned_agent_time_cf - rware_ppo_shared,0.0000,0.0000,0.0000,0.0000,8

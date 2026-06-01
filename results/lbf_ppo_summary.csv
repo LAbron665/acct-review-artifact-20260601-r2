@@ -1,0 +1,7 @@
+env,method,metric,mean,std,seeds,final_episode
+lbf_3x3_2p1f_coop,lbf_ppo_shared,greedy_final,0.0547,0.0488,8,500
+lbf_3x3_2p1f_coop,lbf_ppo_shared,sample_final,0.2812,0.1362,8,500
+lbf_3x3_2p1f_coop,lbf_ppo_learned_agent_time_cf,greedy_final,0.0859,0.0620,8,500
+lbf_3x3_2p1f_coop,lbf_ppo_learned_agent_time_cf,sample_final,0.0938,0.0827,8,500
+lbf_3x3_2p1f_coop,lbf_ppo_learned_acct,greedy_final,0.0625,0.0442,8,500
+lbf_3x3_2p1f_coop,lbf_ppo_learned_acct,sample_final,0.1406,0.1586,8,500

@@ -1,0 +1,17 @@
+env,total_pairs,relevant_pairs,irrelevant_pairs,method,episode,sample_mean,sample_std,greedy_mean,greedy_std,seeds
+lever_20_pairs,20,4,16,shared,200,1.7543,0.0804,2.0000,0.0000,32
+lever_20_pairs,20,4,16,uniform_transport,200,0.5931,0.0591,2.0000,0.0000,32
+lever_20_pairs,20,4,16,agent_time_cf,200,1.7710,0.0635,2.0000,0.0000,32
+lever_20_pairs,20,4,16,acct,200,1.8313,0.0557,2.0000,0.0000,32
+lever_32_pairs,32,4,28,shared,200,1.7540,0.0737,2.0000,0.0000,32
+lever_32_pairs,32,4,28,uniform_transport,200,0.5995,0.0584,2.0000,0.0000,32
+lever_32_pairs,32,4,28,agent_time_cf,200,1.7653,0.0604,2.0000,0.0000,32
+lever_32_pairs,32,4,28,acct,200,1.8383,0.0476,2.0000,0.0000,32
+lever_48_pairs,48,4,44,shared,200,1.7517,0.0729,2.0000,0.0000,32
+lever_48_pairs,48,4,44,uniform_transport,200,0.5828,0.0456,2.0000,0.0000,32
+lever_48_pairs,48,4,44,agent_time_cf,200,1.7629,0.0597,2.0000,0.0000,32
+lever_48_pairs,48,4,44,acct,200,1.8282,0.0668,2.0000,0.0000,32
+lever_72_pairs,72,4,68,shared,200,1.7683,0.0758,2.0000,0.0000,32
+lever_72_pairs,72,4,68,uniform_transport,200,0.5742,0.0532,2.0000,0.0000,32
+lever_72_pairs,72,4,68,agent_time_cf,200,1.7852,0.0804,2.0000,0.0000,32
+lever_72_pairs,72,4,68,acct,200,1.8403,0.0656,2.0000,0.0000,32

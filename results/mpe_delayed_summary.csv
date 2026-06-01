@@ -1,0 +1,7 @@
+env,method,metric,mean,std,seeds,final_episode
+delayed_simple_spread,shared,greedy_final,-1.3729,0.3850,8,300
+delayed_simple_spread,shared,sample_final,-1.1958,0.3466,8,300
+delayed_simple_spread,learned_agent_time_cf,greedy_final,-0.8414,0.1849,8,300
+delayed_simple_spread,learned_agent_time_cf,sample_final,-0.8481,0.2630,8,300
+delayed_simple_spread,learned_acct,greedy_final,-0.9882,0.1666,8,300
+delayed_simple_spread,learned_acct,sample_final,-0.8192,0.1405,8,300

@@ -1,0 +1,479 @@
+label,source,snippet,status
+reporting mean std convention,reporting convention,mean $\pm$ standard deviation,PASS
+reporting bootstrap convention,reporting convention,"10{,}000 bootstrap resamples",PASS
+reporting descriptive intervals,reporting convention,descriptive uncertainty summaries,PASS
+reporting full curve metrics,reporting convention,full-curve learning-efficiency,PASS
+reporting auc metric,reporting convention,sampled-return AUC,PASS
+reporting threshold metric,reporting convention,first episode at which each method reaches sampled return 1.5,PASS
+query budget script,query_budget.csv,code/results/query\_budget.csv,PASS
+data budget script,data_budget.csv,code/results/data\_budget.csv,PASS
+data budget analyzer,data_budget.csv,analyze\_data\_budget.py,PASS
+data budget critic fit caveat,data_budget.csv,auxiliary critic-fit data budget,PASS
+query delayed acct queries,query budget reporting,41 critic/reward-model queries,PASS
+query delayed acct transport,query budget reporting,60 transport-weight entries,PASS
+query delayed shapley queries,query budget reporting,upper bound of 336 queries,PASS
+query pair acct queries,query budget reporting,49 critic/reward-model queries,PASS
+query pair acct transport,query budget reporting,84 transport-weight entries,PASS
+query pair shapley queries,query budget reporting,upper bound of 400 queries,PASS
+query fairness conclusion,query budget reporting,not obtained by giving \acct{} a larger counterfactual query budget,PASS
+artifact verified zip or final url status,experimental protocol,verified local ZIP rather than a public anonymous repository || The code artifact is available for anonymous review at,PASS
+artifact final url replacement state,experimental protocol,replace this sentence with the review URL || The code and data are available at,PASS
+checklist public url state,experimental protocol,does not yet provide a public anonymous repository URL || The code and data are available at,PASS
+artifact local package status,experimental protocol,identity-scrubbed local artifact package,PASS
+artifact anonymous upload status,experimental protocol,anonymous review URL,PASS
+checklist llm methodology status,experimental protocol,"No methodologically important, original, or non-standard LLM or agent component",PASS
+checklist llm audit status,experimental protocol,"all claims, citations, and numerical results are checked against the manuscript and artifact audits",PASS
+objective status not return equivalent,experimental protocol,training-credit transformation rather than a return-equivalent reward-redistribution method,PASS
+objective status credit sum,experimental protocol,not constrained to sum to the environment return,PASS
+objective status not unbiased,experimental protocol,not generally an unbiased policy-gradient advantage,PASS
+objective status policy preservation,experimental protocol,rather than a universal policy-preservation theorem,PASS
+transport scale invariance,experimental protocol,Transport-scale invariance,PASS
+transport scale component caveat,experimental protocol,This proposition concerns $C^{\mathrm{tr}}$ only,PASS
+transport full credit scale caveat,experimental protocol,full \acct{} credit remains scale-sensitive,PASS
+transport learned calibration boundary,experimental protocol,raw agent-time CF directly inherits the learned head's magnitude calibration,PASS
+evidence scope map,experimental protocol,Evidence-scope map,PASS
+evidence mechanistic claim,experimental protocol,The headline empirical claim is mechanistic,PASS
+evidence perturbation scope,experimental protocol,Influence perturbation diagnostics,PASS
+evidence local unsupported,experimental protocol,Performance dominance on high-dimensional MARL benchmarks,PASS
+evidence mpe unsupported,experimental protocol,A reliable performance advantage over MAPPO,PASS
+evidence independent reproduction unsupported,experimental protocol,Independent third-party reproduction,PASS
+positioning appendix,experimental protocol,Positioning Against Agent-Temporal Credit Methods,PASS
+positioning table,experimental protocol,Positioning of \acct{} relative to closely related temporal and agent-temporal credit-assignment methods,PASS
+positioning maca related,experimental protocol,multi-level coordination credit on StarCraft tasks,PASS
+positioning maca boundary,experimental protocol,coalition-level spatial credit across agent subsets,PASS
+positioning tar2 shaping,experimental protocol,potential-based shaping connection,PASS
+positioning tar2 benchmarks,experimental protocol,SMACLite and Google Research Football,PASS
+positioning cast,experimental protocol,CAST imposes causal structure,PASS
+positioning magic,experimental protocol,MAGIC estimates multi-step inter-agent causal influence,PASS
+positioning design boundary,experimental protocol,not a complete reward-redistribution architecture,PASS
+positioning acct not causal discovery,experimental protocol,causal-discovery model,PASS
+positioning acct not intrinsic motivation,experimental protocol,intrinsic-motivation system,PASS
+positioning asynchronous method,experimental protocol,asynchronous-action credit assignment is orthogonal,PASS
+positioning asynchronous boundary,experimental protocol,synchronized trajectory lattice,PASS
+limitations synchronous action,experimental protocol,synchronous-action local diagnostics,PASS
+artifact makefile smoke,experimental protocol,\texttt{artifact-smoke},PASS
+artifact anonymity audit,experimental protocol,anonymity audit,PASS
+artifact anonymity audit file,experimental protocol,results/anonymity\_audit.csv,PASS
+artifact makefile release,experimental protocol,\texttt{release-check},PASS
+artifact release repo target,experimental protocol,\texttt{release-repo},PASS
+artifact dependency license audit,experimental protocol,dependency-license metadata,PASS
+artifact third party notes,experimental protocol,THIRD\_PARTY.md,PASS
+checklist dependency license audit,experimental protocol,dependency-license metadata audit generated from installed Python package metadata,PASS
+artifact bibliography audit,experimental protocol,bibliography consistency,PASS
+artifact release repo metadata,experimental protocol,clean local anonymous repository,PASS
+artifact anonymous mirror route,experimental protocol,anonymous.4open.science,PASS
+artifact latex submission audit,experimental protocol,\LaTeX{} submission audit,PASS
+artifact manifest hashes,experimental protocol,validate manifest SHA-256 hashes,PASS
+artifact zip verifier,experimental protocol,anonymous-ZIP verifier,PASS
+artifact manifest scope,experimental protocol,manifest hashes,PASS
+local learning rate,experimental protocol,learning rate $0.08$,PASS
+local ema baseline,experimental protocol,update weight $0.02$,PASS
+local diagnostic seeds,experimental protocol,The local diagnostics use 32 seeds,PASS
+local figure seeds,experimental protocol,Local diagnostic results over 32 seeds,PASS
+local figure sampled greedy panels,experimental protocol,sampled-policy evaluation and bottom panels show greedy-policy evaluation,PASS
+local transport lambda beta,experimental protocol,"default $\lambda=0.90$, and default residual weight $\beta=0.75$",PASS
+local return equivalent proxy,experimental protocol,Return-eq CF transport,PASS
+support preservation proposition,experimental protocol,Support preservation under nonzero salience mass,PASS
+support preservation condition,experimental protocol,some eligible nonzero salience must remain for each nonzero residual,PASS
+influence perturbation summary,experimental protocol,influence\_perturbation\_summary.csv,PASS
+influence perturbation statistics,experimental protocol,influence\_perturbation\_stat\_tests.csv,PASS
+influence perturbation protocol,experimental protocol,16 seeds and 400 training episodes,PASS
+influence perturbation caveat,experimental protocol,does not imply robustness to arbitrary critic misspecification,PASS
+influence perturbation scale caveat,experimental protocol,full \acct{} credit remains scale-sensitive through its instantaneous term,PASS
+learned salience pruning file,experimental protocol,learned\_salience\_pruning.csv,PASS
+learned salience ranking caveat,experimental protocol,not be read as a new trained variant of \acct{},PASS
+learned salience calibration caveat,experimental protocol,would need confidence calibration or pruning,PASS
+pruned learned acct summary file,experimental protocol,Pruned learned \acct{},PASS
+pruned learned acct diagnostic caveat,experimental protocol,not used as the headline method,PASS
+pruned fraction sensitivity table,experimental protocol,Pruned learned-\acct{} pruning-fraction sensitivity,PASS
+pruned fraction sensitivity caveat,experimental protocol,not identical across tasks,PASS
+distractor scaling table,experimental protocol,Distractor-scaling stress diagnostic,PASS
+distractor scaling caveat,experimental protocol,not a claim about SMAC-scale generalization,PASS
+learned local critic samples,experimental protocol,2048 uniformly sampled trajectories,PASS
+mpe actor critic learning rates,experimental protocol,"actor learning rate $2\cdot10^{-3}$, critic learning rate $3\cdot10^{-3}$",PASS
+mpe ppo protocol,experimental protocol,"minibatches of eight episodes, three PPO epochs",PASS
+mpe acct protocol,experimental protocol,residual weight $0.5$; hybrid MAPPO uses learned-credit weight $0.05$,PASS
+lbf protocol,experimental protocol,"500 training episodes, 25-step episodes",PASS
+rware protocol,experimental protocol,"300 training episodes, eight seeds, 100-step episodes",PASS
+method schematic figure file,experimental protocol,Figure/acct_method_schematic.pdf,PASS
+polished local figure file,experimental protocol,Figure/acct_local_results_polished.pdf,PASS
+medium benchmark figure file,experimental protocol,Figure/acct_medium_benchmarks.pdf,PASS
+diagnostics appendix figure file,experimental protocol,Figure/acct_diagnostics_appendix.pdf,PASS
+medium benchmark summary file,experimental protocol,medium\_benchmark\_summary.csv,PASS
+medium benchmark stats file,experimental protocol,medium\_benchmark\_stat\_tests.csv,PASS
+medium benchmark protocol,experimental protocol,600 training episodes with 16 seeds,PASS
+medium lbf rware protocol,experimental protocol,1000 training episodes with 16 seeds,PASS
+medium benchmark metrics,experimental protocol,"final sampled return, final greedy return, sampled-return AUC, greedy-return AUC, seed-wise win rate",PASS
+artifact final url helper or applied URL,experimental protocol,finalize\_anonymous\_url.py || The code and data are available at,PASS
+local summary delayed_lever shared sample 200,local_summary.csv,1.754 \pm 0.079,PASS
+local summary delayed_lever final_step_cf sample 200,local_summary.csv,0.537 \pm 0.058,PASS
+local summary delayed_lever uniform_transport sample 200,local_summary.csv,0.593 \pm 0.058,PASS
+local summary delayed_lever cf_transport sample 200,local_summary.csv,0.793 \pm 0.111,PASS
+local summary delayed_lever return_eq_cf_transport sample 200,local_summary.csv,0.590 \pm 0.071,PASS
+local summary delayed_lever agent_time_cf sample 200,local_summary.csv,1.771 \pm 0.063,PASS
+local summary delayed_lever sampled_agent_time_shapley sample 200,local_summary.csv,1.777 \pm 0.074,PASS
+local summary delayed_lever acct sample 200,local_summary.csv,1.831 \pm 0.055,PASS
+local summary delayed_lever learned_cf_transport sample 200,local_summary.csv,0.802 \pm 0.088,PASS
+local summary delayed_lever learned_return_eq_cf_transport sample 200,local_summary.csv,0.633 \pm 0.072,PASS
+local summary delayed_lever learned_agent_time_cf sample 200,local_summary.csv,1.676 \pm 0.072,PASS
+local summary delayed_lever learned_acct sample 200,local_summary.csv,1.768 \pm 0.064,PASS
+local summary pair_gate shared sample 200,local_summary.csv,1.372 \pm 0.176,PASS
+local summary pair_gate final_step_cf sample 200,local_summary.csv,0.318 \pm 0.041,PASS
+local summary pair_gate uniform_transport sample 200,local_summary.csv,0.280 \pm 0.035,PASS
+local summary pair_gate cf_transport sample 200,local_summary.csv,0.407 \pm 0.051,PASS
+local summary pair_gate return_eq_cf_transport sample 200,local_summary.csv,0.342 \pm 0.047,PASS
+local summary pair_gate agent_time_cf sample 200,local_summary.csv,1.431 \pm 0.103,PASS
+local summary pair_gate sampled_agent_time_shapley sample 200,local_summary.csv,1.463 \pm 0.094,PASS
+local summary pair_gate acct sample 200,local_summary.csv,1.577 \pm 0.084,PASS
+local summary pair_gate learned_cf_transport sample 200,local_summary.csv,0.386 \pm 0.050,PASS
+local summary pair_gate learned_return_eq_cf_transport sample 200,local_summary.csv,0.342 \pm 0.047,PASS
+local summary pair_gate learned_agent_time_cf sample 200,local_summary.csv,1.182 \pm 0.092,PASS
+local summary pair_gate learned_acct sample 200,local_summary.csv,1.318 \pm 0.090,PASS
+learned salience pruning delayed_lever top 0.20 kept pairs,learned_salience_pruning.csv,4.000,PASS
+learned salience pruning delayed_lever top 0.20 relevant mass,learned_salience_pruning.csv,0.935,PASS
+learned salience pruning delayed_lever top 0.20 irrelevant active,learned_salience_pruning.csv,0.026,PASS
+learned salience pruning delayed_lever top 1.00 kept pairs,learned_salience_pruning.csv,20.000,PASS
+learned salience pruning delayed_lever top 1.00 relevant mass,learned_salience_pruning.csv,0.757,PASS
+learned salience pruning delayed_lever top 1.00 irrelevant active,learned_salience_pruning.csv,1.000,PASS
+learned salience pruning pair_gate top 0.20 kept pairs,learned_salience_pruning.csv,5.000,PASS
+learned salience pruning pair_gate top 0.20 relevant mass,learned_salience_pruning.csv,0.965,PASS
+learned salience pruning pair_gate top 0.20 irrelevant active,learned_salience_pruning.csv,0.040,PASS
+learned salience pruning pair_gate top 1.00 kept pairs,learned_salience_pruning.csv,24.000,PASS
+learned salience pruning pair_gate top 1.00 relevant mass,learned_salience_pruning.csv,0.781,PASS
+learned salience pruning pair_gate top 1.00 irrelevant active,learned_salience_pruning.csv,1.000,PASS
+pruned learned acct delayed_lever sample 200,pruned_learned_acct_summary.csv,1.785 \pm 0.066,PASS
+pruned learned acct delayed_lever vs learned acct,pruned_learned_acct_stat_tests.csv,0.017,PASS
+pruned learned acct delayed_lever vs learned acct interval,pruned_learned_acct_stat_tests.csv,"[0.011,0.023]",PASS
+pruned learned acct pair_gate sample 200,pruned_learned_acct_summary.csv,1.333 \pm 0.096,PASS
+pruned learned acct pair_gate vs learned acct,pruned_learned_acct_stat_tests.csv,0.015,PASS
+pruned learned acct pair_gate vs learned acct interval,pruned_learned_acct_stat_tests.csv,"[0.008,0.022]",PASS
+pruned fraction delayed_lever top 0.10,pruned_fraction_sensitivity_summary.csv,1.732 \pm 0.076,PASS
+pruned fraction delayed_lever top 0.20,pruned_fraction_sensitivity_summary.csv,1.785 \pm 0.066,PASS
+pruned fraction delayed_lever top 0.30,pruned_fraction_sensitivity_summary.csv,1.779 \pm 0.063,PASS
+pruned fraction pair_gate top 0.10,pruned_fraction_sensitivity_summary.csv,1.231 \pm 0.104,PASS
+pruned fraction pair_gate top 0.20,pruned_fraction_sensitivity_summary.csv,1.333 \pm 0.096,PASS
+pruned fraction pair_gate top 0.30,pruned_fraction_sensitivity_summary.csv,1.337 \pm 0.091,PASS
+distractor scaling 20 pairs shared,distractor_scaling_summary.csv,1.754 \pm 0.080,PASS
+distractor scaling 20 pairs agent_time_cf,distractor_scaling_summary.csv,1.771 \pm 0.064,PASS
+distractor scaling 20 pairs acct,distractor_scaling_summary.csv,1.831 \pm 0.056,PASS
+distractor scaling 32 pairs shared,distractor_scaling_summary.csv,1.754 \pm 0.074,PASS
+distractor scaling 32 pairs agent_time_cf,distractor_scaling_summary.csv,1.765 \pm 0.060,PASS
+distractor scaling 32 pairs acct,distractor_scaling_summary.csv,1.838 \pm 0.048,PASS
+distractor scaling 48 pairs shared,distractor_scaling_summary.csv,1.752 \pm 0.073,PASS
+distractor scaling 48 pairs agent_time_cf,distractor_scaling_summary.csv,1.763 \pm 0.060,PASS
+distractor scaling 48 pairs acct,distractor_scaling_summary.csv,1.828 \pm 0.067,PASS
+distractor scaling 72 pairs shared,distractor_scaling_summary.csv,1.768 \pm 0.076,PASS
+distractor scaling 72 pairs agent_time_cf,distractor_scaling_summary.csv,1.785 \pm 0.080,PASS
+distractor scaling 72 pairs acct,distractor_scaling_summary.csv,1.840 \pm 0.066,PASS
+local delayed_lever ACCT - uniform transport,local_stat_tests.csv,1.238,PASS
+local delayed_lever ACCT - uniform transport interval,local_stat_tests.csv,"[1.216,1.260]",PASS
+local pair_gate ACCT - uniform transport,local_stat_tests.csv,1.297,PASS
+local pair_gate ACCT - uniform transport interval,local_stat_tests.csv,"[1.265,1.328]",PASS
+local delayed_lever ACCT - CF transport-only,local_stat_tests.csv,1.038,PASS
+local delayed_lever ACCT - CF transport-only interval,local_stat_tests.csv,"[0.998,1.077]",PASS
+local pair_gate ACCT - CF transport-only,local_stat_tests.csv,1.171,PASS
+local pair_gate ACCT - CF transport-only interval,local_stat_tests.csv,"[1.138,1.202]",PASS
+local delayed_lever ACCT - return-eq CF transport,local_stat_tests.csv,1.241,PASS
+local delayed_lever ACCT - return-eq CF transport interval,local_stat_tests.csv,"[1.215,1.268]",PASS
+local pair_gate ACCT - return-eq CF transport,local_stat_tests.csv,1.235,PASS
+local pair_gate ACCT - return-eq CF transport interval,local_stat_tests.csv,"[1.204,1.265]",PASS
+local delayed_lever ACCT - agent-time CF,local_stat_tests.csv,0.060,PASS
+local delayed_lever ACCT - agent-time CF interval,local_stat_tests.csv,"[0.051,0.069]",PASS
+local pair_gate ACCT - agent-time CF,local_stat_tests.csv,0.147,PASS
+local pair_gate ACCT - agent-time CF interval,local_stat_tests.csv,"[0.128,0.165]",PASS
+local delayed_lever ACCT - sampled Shapley,local_stat_tests.csv,0.054,PASS
+local delayed_lever ACCT - sampled Shapley interval,local_stat_tests.csv,"[0.022,0.086]",PASS
+local pair_gate ACCT - sampled Shapley,local_stat_tests.csv,0.115,PASS
+local pair_gate ACCT - sampled Shapley interval,local_stat_tests.csv,"[0.072,0.157]",PASS
+local delayed_lever Learned ACCT - learned CF transport,local_stat_tests.csv,0.967,PASS
+local delayed_lever Learned ACCT - learned CF transport interval,local_stat_tests.csv,"[0.935,0.999]",PASS
+local pair_gate Learned ACCT - learned CF transport,local_stat_tests.csv,0.932,PASS
+local pair_gate Learned ACCT - learned CF transport interval,local_stat_tests.csv,"[0.901,0.963]",PASS
+local delayed_lever Learned ACCT - learned return-eq CF transport,local_stat_tests.csv,1.136,PASS
+local delayed_lever Learned ACCT - learned return-eq CF transport interval,local_stat_tests.csv,"[1.106,1.165]",PASS
+local pair_gate Learned ACCT - learned return-eq CF transport,local_stat_tests.csv,0.976,PASS
+local pair_gate Learned ACCT - learned return-eq CF transport interval,local_stat_tests.csv,"[0.945,1.007]",PASS
+local delayed_lever Learned ACCT - learned AT-CF,local_stat_tests.csv,0.093,PASS
+local delayed_lever Learned ACCT - learned AT-CF interval,local_stat_tests.csv,"[0.079,0.106]",PASS
+local pair_gate Learned ACCT - learned AT-CF,local_stat_tests.csv,0.136,PASS
+local pair_gate Learned ACCT - learned AT-CF interval,local_stat_tests.csv,"[0.120,0.152]",PASS
+query budget delayed_lever final_step_cf queries,query_budget.csv,9,PASS
+query budget delayed_lever final_step_cf replacements,query_budget.csv,8,PASS
+query budget delayed_lever final_step_cf transport,query_budget.csv,0,PASS
+query budget delayed_lever agent_time_cf queries,query_budget.csv,41,PASS
+query budget delayed_lever agent_time_cf replacements,query_budget.csv,40,PASS
+query budget delayed_lever agent_time_cf transport,query_budget.csv,0,PASS
+query budget delayed_lever return_eq_cf_transport queries,query_budget.csv,41,PASS
+query budget delayed_lever return_eq_cf_transport replacements,query_budget.csv,40,PASS
+query budget delayed_lever return_eq_cf_transport transport,query_budget.csv,60,PASS
+query budget delayed_lever acct queries,query_budget.csv,41,PASS
+query budget delayed_lever acct replacements,query_budget.csv,40,PASS
+query budget delayed_lever acct transport,query_budget.csv,60,PASS
+query budget delayed_lever sampled_agent_time_shapley queries,query_budget.csv,336,PASS
+query budget delayed_lever sampled_agent_time_shapley replacements,query_budget.csv,320,PASS
+query budget delayed_lever sampled_agent_time_shapley transport,query_budget.csv,0,PASS
+query budget pair_gate final_step_cf queries,query_budget.csv,9,PASS
+query budget pair_gate final_step_cf replacements,query_budget.csv,8,PASS
+query budget pair_gate final_step_cf transport,query_budget.csv,0,PASS
+query budget pair_gate agent_time_cf queries,query_budget.csv,49,PASS
+query budget pair_gate agent_time_cf replacements,query_budget.csv,48,PASS
+query budget pair_gate agent_time_cf transport,query_budget.csv,0,PASS
+query budget pair_gate return_eq_cf_transport queries,query_budget.csv,49,PASS
+query budget pair_gate return_eq_cf_transport replacements,query_budget.csv,48,PASS
+query budget pair_gate return_eq_cf_transport transport,query_budget.csv,84,PASS
+query budget pair_gate acct queries,query_budget.csv,49,PASS
+query budget pair_gate acct replacements,query_budget.csv,48,PASS
+query budget pair_gate acct transport,query_budget.csv,84,PASS
+query budget pair_gate sampled_agent_time_shapley queries,query_budget.csv,400,PASS
+query budget pair_gate sampled_agent_time_shapley replacements,query_budget.csv,384,PASS
+query budget pair_gate sampled_agent_time_shapley transport,query_budget.csv,0,PASS
+data budget Local exact/oracle diagnostics,data_budget.csv,"Local exact/oracle diagnostics & $512$ & $409{,}600$ & $0$ & $1{,}364{,}480$ & $0$",PASS
+data budget Local learned diagnostics,data_budget.csv,"Local learned diagnostics & $256$ & $204{,}800$ & $524{,}288$ & $682{,}240$ & $0$",PASS
+data budget Learned critic sample sweep,data_budget.csv,"Learned critic sample sweep & $128$ & $51{,}200$ & $522{,}240$ & $174{,}720$ & $32{,}768$",PASS
+data budget Pruned learned ACCT diagnostic,data_budget.csv,"Pruned learned ACCT diagnostic & $192$ & $153{,}600$ & $393{,}216$ & $511{,}680$ & $0$",PASS
+data budget Pruned fraction sensitivity,data_budget.csv,"Pruned fraction sensitivity & $192$ & $153{,}600$ & $393{,}216$ & $511{,}680$ & $0$",PASS
+data budget Distractor scaling stress test,data_budget.csv,"Distractor scaling stress test & $512$ & $409{,}600$ & $0$ & $1{,}364{,}480$ & $0$",PASS
+data budget Influence perturbation diagnostics,data_budget.csv,"Influence perturbation diagnostics & $320$ & $128{,}000$ & $0$ & $436{,}800$ & $0$",PASS
+data budget MPE2 smoke diagnostics,data_budget.csv,"MPE2 smoke diagnostics & $104$ & $31{,}200$ & $0$ & $1{,}736$ & $0$",PASS
+data budget LBF stress test,data_budget.csv,"LBF stress test & $24$ & $12{,}000$ & $0$ & $576$ & $0$",PASS
+data budget RWARE stress test,data_budget.csv,"RWARE stress test & $24$ & $7{,}200$ & $0$ & $384$ & $0$",PASS
+efficiency delayed_lever shared sample auc,local_efficiency_summary.csv,1.756 \pm 0.026,PASS
+efficiency delayed_lever shared threshold,local_efficiency_summary.csv,120,PASS
+efficiency delayed_lever cf_transport sample auc,local_efficiency_summary.csv,1.360 \pm 0.069,PASS
+efficiency delayed_lever cf_transport threshold,local_efficiency_summary.csv,400,PASS
+efficiency delayed_lever agent_time_cf sample auc,local_efficiency_summary.csv,1.766 \pm 0.011,PASS
+efficiency delayed_lever agent_time_cf threshold,local_efficiency_summary.csv,120,PASS
+efficiency delayed_lever sampled_agent_time_shapley sample auc,local_efficiency_summary.csv,1.764 \pm 0.011,PASS
+efficiency delayed_lever sampled_agent_time_shapley threshold,local_efficiency_summary.csv,120,PASS
+efficiency delayed_lever acct sample auc,local_efficiency_summary.csv,1.804 \pm 0.011,PASS
+efficiency delayed_lever acct threshold,local_efficiency_summary.csv,100,PASS
+efficiency delayed_lever learned_agent_time_cf sample auc,local_efficiency_summary.csv,1.719 \pm 0.011,PASS
+efficiency delayed_lever learned_agent_time_cf threshold,local_efficiency_summary.csv,140,PASS
+efficiency delayed_lever learned_acct sample auc,local_efficiency_summary.csv,1.770 \pm 0.010,PASS
+efficiency delayed_lever learned_acct threshold,local_efficiency_summary.csv,120,PASS
+efficiency pair_gate shared sample auc,local_efficiency_summary.csv,1.558 \pm 0.054,PASS
+efficiency pair_gate shared threshold,local_efficiency_summary.csv,240,PASS
+efficiency pair_gate cf_transport sample auc,local_efficiency_summary.csv,0.773 \pm 0.070,PASS
+efficiency pair_gate cf_transport threshold,local_efficiency_summary.csv,720,PASS
+efficiency pair_gate agent_time_cf sample auc,local_efficiency_summary.csv,1.576 \pm 0.020,PASS
+efficiency pair_gate agent_time_cf threshold,local_efficiency_summary.csv,220,PASS
+efficiency pair_gate sampled_agent_time_shapley sample auc,local_efficiency_summary.csv,1.580 \pm 0.018,PASS
+efficiency pair_gate sampled_agent_time_shapley threshold,local_efficiency_summary.csv,220,PASS
+efficiency pair_gate acct sample auc,local_efficiency_summary.csv,1.638 \pm 0.018,PASS
+efficiency pair_gate acct threshold,local_efficiency_summary.csv,190,PASS
+efficiency pair_gate learned_agent_time_cf sample auc,local_efficiency_summary.csv,1.434 \pm 0.021,PASS
+efficiency pair_gate learned_agent_time_cf threshold,local_efficiency_summary.csv,280,PASS
+efficiency pair_gate learned_acct sample auc,local_efficiency_summary.csv,1.535 \pm 0.018,PASS
+efficiency pair_gate learned_acct threshold,local_efficiency_summary.csv,240,PASS
+efficiency delayed_lever ACCT - agent-time CF sample_auc,local_efficiency_stat_tests.csv,0.038,PASS
+efficiency delayed_lever ACCT - agent-time CF sample_auc interval,local_efficiency_stat_tests.csv,"[0.035,0.041]",PASS
+efficiency pair_gate ACCT - agent-time CF sample_auc,local_efficiency_stat_tests.csv,0.063,PASS
+efficiency pair_gate ACCT - agent-time CF sample_auc interval,local_efficiency_stat_tests.csv,"[0.059,0.067]",PASS
+efficiency delayed_lever ACCT - sampled Shapley sample_auc,local_efficiency_stat_tests.csv,0.040,PASS
+efficiency delayed_lever ACCT - sampled Shapley sample_auc interval,local_efficiency_stat_tests.csv,"[0.035,0.046]",PASS
+efficiency pair_gate ACCT - sampled Shapley sample_auc,local_efficiency_stat_tests.csv,0.058,PASS
+efficiency pair_gate ACCT - sampled Shapley sample_auc interval,local_efficiency_stat_tests.csv,"[0.051,0.066]",PASS
+efficiency delayed_lever Learned ACCT - learned AT-CF sample_auc,local_efficiency_stat_tests.csv,0.052,PASS
+efficiency delayed_lever Learned ACCT - learned AT-CF sample_auc interval,local_efficiency_stat_tests.csv,"[0.049,0.055]",PASS
+efficiency pair_gate Learned ACCT - learned AT-CF sample_auc,local_efficiency_stat_tests.csv,0.100,PASS
+efficiency pair_gate Learned ACCT - learned AT-CF sample_auc interval,local_efficiency_stat_tests.csv,"[0.096,0.104]",PASS
+learned sweep delayed_lever 128 critic r2,learned_critic_sample_sweep_summary.csv,0.625 \pm 0.048,PASS
+learned sweep delayed_lever 128 atcf sample 200,learned_critic_sample_sweep_summary.csv,1.591 \pm 0.068,PASS
+learned sweep delayed_lever 128 acct sample 200,learned_critic_sample_sweep_summary.csv,1.662 \pm 0.066,PASS
+learned sweep delayed_lever 128 greedy final,learned_critic_sample_sweep_summary.csv,2.000 \pm 0.000,PASS
+learned sweep delayed_lever 512 critic r2,learned_critic_sample_sweep_summary.csv,0.831 \pm 0.014,PASS
+learned sweep delayed_lever 512 atcf sample 200,learned_critic_sample_sweep_summary.csv,1.662 \pm 0.054,PASS
+learned sweep delayed_lever 512 acct sample 200,learned_critic_sample_sweep_summary.csv,1.750 \pm 0.046,PASS
+learned sweep delayed_lever 512 greedy final,learned_critic_sample_sweep_summary.csv,2.000 \pm 0.000,PASS
+learned sweep delayed_lever 2048 critic r2,learned_critic_sample_sweep_summary.csv,0.887 \pm 0.011,PASS
+learned sweep delayed_lever 2048 atcf sample 200,learned_critic_sample_sweep_summary.csv,1.659 \pm 0.039,PASS
+learned sweep delayed_lever 2048 acct sample 200,learned_critic_sample_sweep_summary.csv,1.767 \pm 0.037,PASS
+learned sweep delayed_lever 2048 greedy final,learned_critic_sample_sweep_summary.csv,2.000 \pm 0.000,PASS
+learned sweep delayed_lever 8192 critic r2,learned_critic_sample_sweep_summary.csv,0.895 \pm 0.003,PASS
+learned sweep delayed_lever 8192 atcf sample 200,learned_critic_sample_sweep_summary.csv,1.657 \pm 0.049,PASS
+learned sweep delayed_lever 8192 acct sample 200,learned_critic_sample_sweep_summary.csv,1.779 \pm 0.037,PASS
+learned sweep delayed_lever 8192 greedy final,learned_critic_sample_sweep_summary.csv,2.000 \pm 0.000,PASS
+learned sweep pair_gate 128 critic r2,learned_critic_sample_sweep_summary.csv,0.555 \pm 0.068,PASS
+learned sweep pair_gate 128 atcf sample 200,learned_critic_sample_sweep_summary.csv,1.050 \pm 0.143,PASS
+learned sweep pair_gate 128 acct sample 200,learned_critic_sample_sweep_summary.csv,1.129 \pm 0.143,PASS
+learned sweep pair_gate 128 greedy final,learned_critic_sample_sweep_summary.csv,2.000 \pm 0.000,PASS
+learned sweep pair_gate 512 critic r2,learned_critic_sample_sweep_summary.csv,0.763 \pm 0.041,PASS
+learned sweep pair_gate 512 atcf sample 200,learned_critic_sample_sweep_summary.csv,1.224 \pm 0.075,PASS
+learned sweep pair_gate 512 acct sample 200,learned_critic_sample_sweep_summary.csv,1.319 \pm 0.075,PASS
+learned sweep pair_gate 512 greedy final,learned_critic_sample_sweep_summary.csv,2.000 \pm 0.000,PASS
+learned sweep pair_gate 2048 critic r2,learned_critic_sample_sweep_summary.csv,0.881 \pm 0.011,PASS
+learned sweep pair_gate 2048 atcf sample 200,learned_critic_sample_sweep_summary.csv,1.205 \pm 0.071,PASS
+learned sweep pair_gate 2048 acct sample 200,learned_critic_sample_sweep_summary.csv,1.331 \pm 0.056,PASS
+learned sweep pair_gate 2048 greedy final,learned_critic_sample_sweep_summary.csv,2.000 \pm 0.000,PASS
+learned sweep pair_gate 8192 critic r2,learned_critic_sample_sweep_summary.csv,0.902 \pm 0.010,PASS
+learned sweep pair_gate 8192 atcf sample 200,learned_critic_sample_sweep_summary.csv,1.212 \pm 0.071,PASS
+learned sweep pair_gate 8192 acct sample 200,learned_critic_sample_sweep_summary.csv,1.359 \pm 0.067,PASS
+learned sweep pair_gate 8192 greedy final,learned_critic_sample_sweep_summary.csv,2.000 \pm 0.000,PASS
+perturbation delayed_lever scale_0.25 perturbed_agent_time_cf,influence_perturbation_summary.csv,0.957 \pm 0.081,PASS
+perturbation delayed_lever scale_0.25 perturbed_acct,influence_perturbation_summary.csv,1.299 \pm 0.079,PASS
+perturbation pair_gate scale_0.25 perturbed_agent_time_cf,influence_perturbation_summary.csv,0.451 \pm 0.068,PASS
+perturbation pair_gate scale_0.25 perturbed_acct,influence_perturbation_summary.csv,0.596 \pm 0.094,PASS
+perturbation delayed_lever scale_1.00 perturbed_agent_time_cf,influence_perturbation_summary.csv,1.796 \pm 0.054,PASS
+perturbation delayed_lever scale_1.00 perturbed_acct,influence_perturbation_summary.csv,1.844 \pm 0.047,PASS
+perturbation pair_gate scale_1.00 perturbed_agent_time_cf,influence_perturbation_summary.csv,1.420 \pm 0.093,PASS
+perturbation pair_gate scale_1.00 perturbed_acct,influence_perturbation_summary.csv,1.581 \pm 0.071,PASS
+perturbation delayed_lever scale_4.00 perturbed_agent_time_cf,influence_perturbation_summary.csv,1.959 \pm 0.028,PASS
+perturbation delayed_lever scale_4.00 perturbed_acct,influence_perturbation_summary.csv,1.963 \pm 0.024,PASS
+perturbation pair_gate scale_4.00 perturbed_agent_time_cf,influence_perturbation_summary.csv,1.938 \pm 0.039,PASS
+perturbation pair_gate scale_4.00 perturbed_acct,influence_perturbation_summary.csv,1.944 \pm 0.043,PASS
+perturbation delayed_lever noise_0.10 perturbed_agent_time_cf,influence_perturbation_summary.csv,1.794 \pm 0.052,PASS
+perturbation delayed_lever noise_0.10 perturbed_acct,influence_perturbation_summary.csv,1.821 \pm 0.058,PASS
+perturbation pair_gate noise_0.10 perturbed_agent_time_cf,influence_perturbation_summary.csv,1.421 \pm 0.089,PASS
+perturbation pair_gate noise_0.10 perturbed_acct,influence_perturbation_summary.csv,1.488 \pm 0.073,PASS
+perturbation delayed_lever noise_0.25 perturbed_agent_time_cf,influence_perturbation_summary.csv,1.787 \pm 0.062,PASS
+perturbation delayed_lever noise_0.25 perturbed_acct,influence_perturbation_summary.csv,1.812 \pm 0.058,PASS
+perturbation pair_gate noise_0.25 perturbed_agent_time_cf,influence_perturbation_summary.csv,1.423 \pm 0.080,PASS
+perturbation pair_gate noise_0.25 perturbed_acct,influence_perturbation_summary.csv,1.448 \pm 0.113,PASS
+perturbation stat delayed_lever scale_0.25,influence_perturbation_stat_tests.csv,0.342,PASS
+perturbation stat delayed_lever scale_0.25 interval,influence_perturbation_stat_tests.csv,"[0.313,0.375]",PASS
+perturbation stat pair_gate scale_0.25,influence_perturbation_stat_tests.csv,0.145,PASS
+perturbation stat pair_gate scale_0.25 interval,influence_perturbation_stat_tests.csv,"[0.121,0.166]",PASS
+perturbation stat delayed_lever scale_4.00,influence_perturbation_stat_tests.csv,0.005,PASS
+perturbation stat delayed_lever scale_4.00 interval,influence_perturbation_stat_tests.csv,"[-0.000,0.010]",PASS
+perturbation stat pair_gate scale_4.00,influence_perturbation_stat_tests.csv,0.007,PASS
+perturbation stat pair_gate scale_4.00 interval,influence_perturbation_stat_tests.csv,"[-0.001,0.016]",PASS
+perturbation stat delayed_lever noise_0.10,influence_perturbation_stat_tests.csv,0.027,PASS
+perturbation stat delayed_lever noise_0.10 interval,influence_perturbation_stat_tests.csv,"[0.015,0.042]",PASS
+perturbation stat pair_gate noise_0.10,influence_perturbation_stat_tests.csv,0.067,PASS
+perturbation stat pair_gate noise_0.10 interval,influence_perturbation_stat_tests.csv,"[0.043,0.094]",PASS
+sensitivity delayed_lever abs_lam0.00_beta0.75,acct_sensitivity_summary.csv,1.781 \pm 0.043,PASS
+sensitivity delayed_lever abs_lam0.50_beta0.75,acct_sensitivity_summary.csv,1.833 \pm 0.036,PASS
+sensitivity delayed_lever abs_lam0.90_beta0.25,acct_sensitivity_summary.csv,1.805 \pm 0.041,PASS
+sensitivity delayed_lever abs_lam0.90_beta0.75,acct_sensitivity_summary.csv,1.825 \pm 0.037,PASS
+sensitivity delayed_lever abs_lam0.90_beta1.25,acct_sensitivity_summary.csv,1.859 \pm 0.048,PASS
+sensitivity delayed_lever abs_lam0.99_beta0.75,acct_sensitivity_summary.csv,1.827 \pm 0.038,PASS
+sensitivity delayed_lever dir_lam0.90_beta0.75,acct_sensitivity_summary.csv,1.837 \pm 0.045,PASS
+sensitivity delayed_lever dir_lam0.90_beta1.25,acct_sensitivity_summary.csv,1.882 \pm 0.035,PASS
+sensitivity pair_gate abs_lam0.00_beta0.75,acct_sensitivity_summary.csv,1.498 \pm 0.115,PASS
+sensitivity pair_gate abs_lam0.50_beta0.75,acct_sensitivity_summary.csv,1.571 \pm 0.085,PASS
+sensitivity pair_gate abs_lam0.90_beta0.25,acct_sensitivity_summary.csv,1.481 \pm 0.067,PASS
+sensitivity pair_gate abs_lam0.90_beta0.75,acct_sensitivity_summary.csv,1.581 \pm 0.083,PASS
+sensitivity pair_gate abs_lam0.90_beta1.25,acct_sensitivity_summary.csv,1.660 \pm 0.045,PASS
+sensitivity pair_gate abs_lam0.99_beta0.75,acct_sensitivity_summary.csv,1.571 \pm 0.086,PASS
+sensitivity pair_gate dir_lam0.90_beta0.75,acct_sensitivity_summary.csv,1.620 \pm 0.094,PASS
+sensitivity pair_gate dir_lam0.90_beta1.25,acct_sensitivity_summary.csv,1.701 \pm 0.063,PASS
+mpe_delayed_summary.csv shared greedy_final,mpe_delayed_summary.csv,-1.373 \pm 0.385,PASS
+mpe_delayed_summary.csv shared sample_final,mpe_delayed_summary.csv,-1.196 \pm 0.347,PASS
+mpe_delayed_summary.csv learned_agent_time_cf greedy_final,mpe_delayed_summary.csv,-0.841 \pm 0.185,PASS
+mpe_delayed_summary.csv learned_agent_time_cf sample_final,mpe_delayed_summary.csv,-0.848 \pm 0.263,PASS
+mpe_delayed_summary.csv learned_acct greedy_final,mpe_delayed_summary.csv,-0.988 \pm 0.167,PASS
+mpe_delayed_summary.csv learned_acct sample_final,mpe_delayed_summary.csv,-0.819 \pm 0.141,PASS
+mpe_ppo_summary.csv ppo_shared greedy_final,mpe_ppo_summary.csv,-0.964 \pm 0.171,PASS
+mpe_ppo_summary.csv ppo_shared sample_final,mpe_ppo_summary.csv,-0.978 \pm 0.150,PASS
+mpe_ppo_summary.csv ppo_learned_agent_time_cf greedy_final,mpe_ppo_summary.csv,-0.957 \pm 0.166,PASS
+mpe_ppo_summary.csv ppo_learned_agent_time_cf sample_final,mpe_ppo_summary.csv,-0.968 \pm 0.191,PASS
+mpe_ppo_summary.csv ppo_learned_agent_shapley greedy_final,mpe_ppo_summary.csv,-0.926 \pm 0.142,PASS
+mpe_ppo_summary.csv ppo_learned_agent_shapley sample_final,mpe_ppo_summary.csv,-0.945 \pm 0.155,PASS
+mpe_ppo_summary.csv ppo_learned_acct greedy_final,mpe_ppo_summary.csv,-0.969 \pm 0.170,PASS
+mpe_ppo_summary.csv ppo_learned_acct sample_final,mpe_ppo_summary.csv,-0.955 \pm 0.184,PASS
+mpe_ppo_summary.csv ppo_learned_directional_acct greedy_final,mpe_ppo_summary.csv,-0.974 \pm 0.140,PASS
+mpe_ppo_summary.csv ppo_learned_directional_acct sample_final,mpe_ppo_summary.csv,-0.988 \pm 0.190,PASS
+mpe_mappo_summary.csv mappo_shared_gae greedy_final,mpe_mappo_summary.csv,-0.912 \pm 0.106,PASS
+mpe_mappo_summary.csv mappo_shared_gae sample_final,mpe_mappo_summary.csv,-0.891 \pm 0.158,PASS
+mpe_mappo_summary.csv mappo_learned_agent_time_cf greedy_final,mpe_mappo_summary.csv,-0.938 \pm 0.171,PASS
+mpe_mappo_summary.csv mappo_learned_agent_time_cf sample_final,mpe_mappo_summary.csv,-0.948 \pm 0.122,PASS
+mpe_mappo_summary.csv mappo_learned_acct greedy_final,mpe_mappo_summary.csv,-1.037 \pm 0.235,PASS
+mpe_mappo_summary.csv mappo_learned_acct sample_final,mpe_mappo_summary.csv,-0.913 \pm 0.153,PASS
+mpe_mappo_summary.csv mappo_gae_plus_agent_time_cf greedy_final,mpe_mappo_summary.csv,-0.908 \pm 0.101,PASS
+mpe_mappo_summary.csv mappo_gae_plus_agent_time_cf sample_final,mpe_mappo_summary.csv,-0.895 \pm 0.112,PASS
+mpe_mappo_summary.csv mappo_gae_plus_acct greedy_final,mpe_mappo_summary.csv,-0.911 \pm 0.098,PASS
+mpe_mappo_summary.csv mappo_gae_plus_acct sample_final,mpe_mappo_summary.csv,-0.919 \pm 0.144,PASS
+mpe_delayed_stat_tests.csv learned_acct - shared sample_return,mpe_delayed_stat_tests.csv,0.377,PASS
+mpe_delayed_stat_tests.csv learned_acct - shared sample_return interval,mpe_delayed_stat_tests.csv,"[0.155,0.647]",PASS
+mpe_delayed_stat_tests.csv learned_acct - shared greedy_return,mpe_delayed_stat_tests.csv,0.385,PASS
+mpe_delayed_stat_tests.csv learned_acct - shared greedy_return interval,mpe_delayed_stat_tests.csv,"[0.051,0.727]",PASS
+mpe_ppo_stat_tests.csv ppo_learned_acct - ppo_shared sample_return,mpe_ppo_stat_tests.csv,0.023,PASS
+mpe_ppo_stat_tests.csv ppo_learned_acct - ppo_shared sample_return interval,mpe_ppo_stat_tests.csv,"[-0.021,0.069]",PASS
+mpe_ppo_stat_tests.csv ppo_learned_acct - ppo_shared greedy_return,mpe_ppo_stat_tests.csv,-0.006,PASS
+mpe_ppo_stat_tests.csv ppo_learned_acct - ppo_shared greedy_return interval,mpe_ppo_stat_tests.csv,"[-0.141,0.136]",PASS
+mpe_ppo_stat_tests.csv ppo_learned_directional_acct - ppo_shared sample_return,mpe_ppo_stat_tests.csv,-0.010,PASS
+mpe_ppo_stat_tests.csv ppo_learned_directional_acct - ppo_shared sample_return interval,mpe_ppo_stat_tests.csv,"[-0.085,0.065]",PASS
+mpe_ppo_stat_tests.csv ppo_learned_directional_acct - ppo_shared greedy_return,mpe_ppo_stat_tests.csv,-0.011,PASS
+mpe_ppo_stat_tests.csv ppo_learned_directional_acct - ppo_shared greedy_return interval,mpe_ppo_stat_tests.csv,"[-0.107,0.084]",PASS
+mpe_mappo_stat_tests.csv mappo_learned_acct - mappo_shared_gae greedy_return,mpe_mappo_stat_tests.csv,-0.125,PASS
+mpe_mappo_stat_tests.csv mappo_learned_acct - mappo_shared_gae greedy_return interval,mpe_mappo_stat_tests.csv,"[-0.282,-0.027]",PASS
+mpe_mappo_stat_tests.csv mappo_gae_plus_acct - mappo_shared_gae greedy_return,mpe_mappo_stat_tests.csv,0.001,PASS
+mpe_mappo_stat_tests.csv mappo_gae_plus_acct - mappo_shared_gae greedy_return interval,mpe_mappo_stat_tests.csv,"[-0.035,0.035]",PASS
+mpe_mappo_stat_tests.csv mappo_gae_plus_acct - mappo_shared_gae sample_return,mpe_mappo_stat_tests.csv,-0.028,PASS
+mpe_mappo_stat_tests.csv mappo_gae_plus_acct - mappo_shared_gae sample_return interval,mpe_mappo_stat_tests.csv,"[-0.083,0.025]",PASS
+mpe_counterfactual_quality_summary.csv q_r2,mpe_counterfactual_quality_summary.csv,-0.052 \pm 0.503,PASS
+mpe_counterfactual_quality_summary.csv q_mse,mpe_counterfactual_quality_summary.csv,0.036 \pm 0.014,PASS
+mpe_counterfactual_quality_summary.csv v_r2,mpe_counterfactual_quality_summary.csv,-0.037 \pm 0.459,PASS
+mpe_counterfactual_quality_summary.csv v_mse,mpe_counterfactual_quality_summary.csv,0.035 \pm 0.011,PASS
+mpe_counterfactual_quality_summary.csv mean_abs_influence,mpe_counterfactual_quality_summary.csv,0.0146 \pm 0.0017,PASS
+mpe_counterfactual_quality_600_summary.csv q_r2,mpe_counterfactual_quality_600_summary.csv,0.282 \pm 0.161,PASS
+mpe_counterfactual_quality_600_summary.csv v_r2,mpe_counterfactual_quality_600_summary.csv,0.310 \pm 0.159,PASS
+mpe_counterfactual_quality_600_summary.csv time_abs_influence_abs_gae_corr,mpe_counterfactual_quality_600_summary.csv,-0.021 \pm 0.092,PASS
+mpe_counterfactual_quality_600_summary.csv signed_influence_gae_corr,mpe_counterfactual_quality_600_summary.csv,-0.024 \pm 0.020,PASS
+mpe_counterfactual_quality_600_summary.csv acct_credit_gae_corr,mpe_counterfactual_quality_600_summary.csv,0.109 \pm 0.019,PASS
+localization acct relevant_mass,credit_localization.csv,0.994,PASS
+localization acct relevant_coverage,credit_localization.csv,0.756,PASS
+localization acct irrelevant_active,credit_localization.csv,0.007,PASS
+localization agent_time_cf relevant_mass,credit_localization.csv,0.993,PASS
+localization agent_time_cf relevant_coverage,credit_localization.csv,0.749,PASS
+localization agent_time_cf irrelevant_active,credit_localization.csv,0.000,PASS
+localization cf_transport relevant_mass,credit_localization.csv,0.993,PASS
+localization cf_transport relevant_coverage,credit_localization.csv,0.756,PASS
+localization cf_transport irrelevant_active,credit_localization.csv,0.007,PASS
+localization directional_acct relevant_mass,credit_localization.csv,0.994,PASS
+localization directional_acct relevant_coverage,credit_localization.csv,0.756,PASS
+localization directional_acct irrelevant_active,credit_localization.csv,0.007,PASS
+localization final_step_cf relevant_mass,credit_localization.csv,0.249,PASS
+localization final_step_cf relevant_coverage,credit_localization.csv,0.042,PASS
+localization final_step_cf irrelevant_active,credit_localization.csv,0.000,PASS
+localization learned_acct relevant_mass,credit_localization.csv,0.786,PASS
+localization learned_acct relevant_coverage,credit_localization.csv,1.000,PASS
+localization learned_acct irrelevant_active,credit_localization.csv,1.000,PASS
+localization learned_agent_time_cf relevant_mass,credit_localization.csv,0.769,PASS
+localization learned_agent_time_cf relevant_coverage,credit_localization.csv,1.000,PASS
+localization learned_agent_time_cf irrelevant_active,credit_localization.csv,1.000,PASS
+localization learned_cf_transport relevant_mass,credit_localization.csv,0.761,PASS
+localization learned_cf_transport relevant_coverage,credit_localization.csv,0.999,PASS
+localization learned_cf_transport irrelevant_active,credit_localization.csv,0.999,PASS
+localization learned_directional_acct relevant_mass,credit_localization.csv,0.777,PASS
+localization learned_directional_acct relevant_coverage,credit_localization.csv,1.000,PASS
+localization learned_directional_acct irrelevant_active,credit_localization.csv,1.000,PASS
+localization learned_pruned_acct relevant_mass,credit_localization.csv,0.955,PASS
+localization learned_pruned_acct relevant_coverage,credit_localization.csv,0.804,PASS
+localization learned_pruned_acct irrelevant_active,credit_localization.csv,0.033,PASS
+localization learned_return_eq_cf_transport relevant_mass,credit_localization.csv,0.601,PASS
+localization learned_return_eq_cf_transport relevant_coverage,credit_localization.csv,0.758,PASS
+localization learned_return_eq_cf_transport irrelevant_active,credit_localization.csv,0.758,PASS
+localization return_eq_cf_transport relevant_mass,credit_localization.csv,0.758,PASS
+localization return_eq_cf_transport relevant_coverage,credit_localization.csv,0.649,PASS
+localization return_eq_cf_transport irrelevant_active,credit_localization.csv,0.000,PASS
+localization sampled_agent_time_shapley relevant_mass,credit_localization.csv,1.000,PASS
+localization sampled_agent_time_shapley relevant_coverage,credit_localization.csv,0.971,PASS
+localization sampled_agent_time_shapley irrelevant_active,credit_localization.csv,0.000,PASS
+localization shared relevant_mass,credit_localization.csv,0.225,PASS
+localization shared relevant_coverage,credit_localization.csv,0.999,PASS
+localization shared irrelevant_active,credit_localization.csv,0.999,PASS
+localization uniform_transport relevant_mass,credit_localization.csv,0.219,PASS
+localization uniform_transport relevant_coverage,credit_localization.csv,0.999,PASS
+localization uniform_transport irrelevant_active,credit_localization.csv,0.999,PASS
+lbf_ppo_summary.csv lbf_ppo_shared greedy_final,lbf_ppo_summary.csv,0.055 \pm 0.049,PASS
+lbf_ppo_summary.csv lbf_ppo_learned_agent_time_cf greedy_final,lbf_ppo_summary.csv,0.086 \pm 0.062,PASS
+lbf_ppo_summary.csv lbf_ppo_learned_acct greedy_final,lbf_ppo_summary.csv,0.063 \pm 0.044,PASS
+rware_ppo_summary.csv rware_ppo_shared greedy_final,rware_ppo_summary.csv,0.000 \pm 0.000,PASS
+rware_ppo_summary.csv rware_ppo_shared sample_final,rware_ppo_summary.csv,0.000 \pm 0.000,PASS
+rware_ppo_summary.csv rware_ppo_learned_agent_time_cf greedy_final,rware_ppo_summary.csv,0.000 \pm 0.000,PASS
+rware_ppo_summary.csv rware_ppo_learned_acct greedy_final,rware_ppo_summary.csv,0.000 \pm 0.000,PASS
+epymarl smoke commit,epymarl_smoke.json,cbc38c09588064eab978501d0f12c2cf58fa7fc2,PASS
+epymarl smoke env key,epymarl_smoke.json,lbforaging:Foraging-5x5-2p-1f-v3,PASS
+epymarl smoke time limit,epymarl_smoke.json,time\_limit=5,PASS
+epymarl smoke t max,epymarl_smoke.json,t\_max=20,PASS
+epymarl acct smoke mode,epymarl_acct_smoke.json,policy-confidence-proxy,PASS
+epymarl acct smoke use flag,epymarl_acct_smoke.json,use\_acct=True,PASS
+epymarl learned qhead smoke mode,epymarl_acct_qhead_smoke.json,learned-q-head,PASS
+epymarl learned qhead standardise rewards,epymarl_acct_qhead_smoke.json,standardise\_rewards=False,PASS
+epymarl learned qhead loss,epymarl_acct_qhead_smoke.json,acct\_q\_loss=0.034,PASS
+epymarl comparison mappo sample return,epymarl_lbf_comparison_summary.csv,0.278 \pm 0.255,PASS
+epymarl comparison acct sample return,epymarl_lbf_comparison_summary.csv,0.000 \pm 0.000,PASS
+epymarl comparison acct greedy return,epymarl_lbf_comparison_summary.csv,0.000 \pm 0.000,PASS
+epymarl comparison sample diff,epymarl_lbf_comparison_stat_tests.csv,-0.278,PASS
+epymarl comparison sample diff interval,epymarl_lbf_comparison_stat_tests.csv,"[-0.500,0.000]",PASS

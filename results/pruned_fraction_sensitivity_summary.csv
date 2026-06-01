@@ -1,0 +1,7 @@
+env,top_fraction,episode,sample_mean,sample_std,greedy_mean,greedy_std,seeds
+delayed_lever,0.10,200,1.7317,0.0755,2.0000,0.0000,32
+delayed_lever,0.20,200,1.7850,0.0659,2.0000,0.0000,32
+delayed_lever,0.30,200,1.7786,0.0632,2.0000,0.0000,32
+pair_gate,0.10,200,1.2305,0.1039,2.0000,0.0000,32
+pair_gate,0.20,200,1.3330,0.0955,2.0000,0.0000,32
+pair_gate,0.30,200,1.3368,0.0912,2.0000,0.0000,32

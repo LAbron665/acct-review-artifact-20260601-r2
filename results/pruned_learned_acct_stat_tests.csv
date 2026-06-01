@@ -1,0 +1,5 @@
+env,episode,comparison,mean_diff,ci95_low,ci95_high,win_rate,paired_seeds
+delayed_lever,200,Pruned learned ACCT - learned ACCT,0.0166,0.0107,0.0227,0.5938,32
+delayed_lever,200,Pruned learned ACCT - learned AT-CF,0.1095,0.0955,0.1229,1.0000,32
+pair_gate,200,Pruned learned ACCT - learned ACCT,0.0151,0.0083,0.0218,0.6562,32
+pair_gate,200,Pruned learned ACCT - learned AT-CF,0.1512,0.1320,0.1702,1.0000,32

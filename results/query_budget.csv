@@ -1,0 +1,25 @@
+env,method,label,horizon,n_agents,n_actions,credit_model_queries,replacement_queries,transport_weight_entries,shapley_permutations,note
+delayed_lever,shared,Shared return,5,4,2,0,0,0,0,no credit-specific critic or reward-model query
+delayed_lever,final_step_cf,Final-step CF,5,4,2,9,8,0,0,minimal terminal-step counterfactual budget
+delayed_lever,uniform_transport,Uniform transport,5,4,2,0,0,60,0,transport uses only observed TD residual
+delayed_lever,cf_transport,CF transport-only,5,4,2,41,40,60,0,one actual prediction plus one replacement per agent-time-action
+delayed_lever,return_eq_cf_transport,Return-equivalent CF transport,5,4,2,41,40,60,0,one actual prediction plus one replacement per agent-time-action
+delayed_lever,agent_time_cf,Agent-time CF,5,4,2,41,40,0,0,one actual prediction plus one replacement per agent-time-action
+delayed_lever,sampled_agent_time_shapley,Sampled Shapley,5,4,2,336,320,0,16,upper bound; skips replacement calls when reference equals actual
+delayed_lever,acct,ACCT,5,4,2,41,40,60,0,one actual prediction plus one replacement per agent-time-action
+delayed_lever,learned_cf_transport,Learned CF transport-only,5,4,2,41,40,60,0,one actual prediction plus one replacement per agent-time-action
+delayed_lever,learned_return_eq_cf_transport,Learned return-equivalent CF transport,5,4,2,41,40,60,0,one actual prediction plus one replacement per agent-time-action
+delayed_lever,learned_agent_time_cf,Learned AT-CF,5,4,2,41,40,0,0,one actual prediction plus one replacement per agent-time-action
+delayed_lever,learned_acct,Learned ACCT,5,4,2,41,40,60,0,one actual prediction plus one replacement per agent-time-action
+pair_gate,shared,Shared return,6,4,2,0,0,0,0,no credit-specific critic or reward-model query
+pair_gate,final_step_cf,Final-step CF,6,4,2,9,8,0,0,minimal terminal-step counterfactual budget
+pair_gate,uniform_transport,Uniform transport,6,4,2,0,0,84,0,transport uses only observed TD residual
+pair_gate,cf_transport,CF transport-only,6,4,2,49,48,84,0,one actual prediction plus one replacement per agent-time-action
+pair_gate,return_eq_cf_transport,Return-equivalent CF transport,6,4,2,49,48,84,0,one actual prediction plus one replacement per agent-time-action
+pair_gate,agent_time_cf,Agent-time CF,6,4,2,49,48,0,0,one actual prediction plus one replacement per agent-time-action
+pair_gate,sampled_agent_time_shapley,Sampled Shapley,6,4,2,400,384,0,16,upper bound; skips replacement calls when reference equals actual
+pair_gate,acct,ACCT,6,4,2,49,48,84,0,one actual prediction plus one replacement per agent-time-action
+pair_gate,learned_cf_transport,Learned CF transport-only,6,4,2,49,48,84,0,one actual prediction plus one replacement per agent-time-action
+pair_gate,learned_return_eq_cf_transport,Learned return-equivalent CF transport,6,4,2,49,48,84,0,one actual prediction plus one replacement per agent-time-action
+pair_gate,learned_agent_time_cf,Learned AT-CF,6,4,2,49,48,0,0,one actual prediction plus one replacement per agent-time-action
+pair_gate,learned_acct,Learned ACCT,6,4,2,49,48,84,0,one actual prediction plus one replacement per agent-time-action

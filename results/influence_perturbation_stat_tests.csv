@@ -1,0 +1,11 @@
+env,perturbation,episode,comparison,mean_diff,ci95_low,ci95_high,win_rate,paired_seeds
+delayed_lever,noise_0.10,200,perturbed ACCT - perturbed AT-CF,0.0266,0.0146,0.0422,0.8125,16
+delayed_lever,noise_0.25,200,perturbed ACCT - perturbed AT-CF,0.0247,0.0132,0.0364,0.6250,16
+delayed_lever,scale_0.25,200,perturbed ACCT - perturbed AT-CF,0.3423,0.3125,0.3745,1.0000,16
+delayed_lever,scale_1.00,200,perturbed ACCT - perturbed AT-CF,0.0486,0.0361,0.0608,0.9375,16
+delayed_lever,scale_4.00,200,perturbed ACCT - perturbed AT-CF,0.0046,-0.0002,0.0098,0.3125,16
+pair_gate,noise_0.10,200,perturbed ACCT - perturbed AT-CF,0.0674,0.0430,0.0938,0.9375,16
+pair_gate,noise_0.25,200,perturbed ACCT - perturbed AT-CF,0.0257,-0.0290,0.0732,0.6250,16
+pair_gate,scale_0.25,200,perturbed ACCT - perturbed AT-CF,0.1452,0.1208,0.1660,1.0000,16
+pair_gate,scale_1.00,200,perturbed ACCT - perturbed AT-CF,0.1615,0.1328,0.1891,1.0000,16
+pair_gate,scale_4.00,200,perturbed ACCT - perturbed AT-CF,0.0065,-0.0013,0.0156,0.3750,16

@@ -1,0 +1,17 @@
+env,episode,comparison,mean_diff,ci95_low,ci95_high,win_rate,paired_seeds
+delayed_lever,200,ACCT - uniform transport,1.2382,1.2162,1.2604,1.0000,32
+delayed_lever,200,ACCT - CF transport-only,1.0381,0.9983,1.0771,1.0000,32
+delayed_lever,200,ACCT - return-eq CF transport,1.2413,1.2152,1.2677,1.0000,32
+delayed_lever,200,ACCT - agent-time CF,0.0603,0.0510,0.0692,0.9688,32
+delayed_lever,200,ACCT - sampled Shapley,0.0544,0.0217,0.0863,0.6875,32
+delayed_lever,200,Learned ACCT - learned CF transport,0.9666,0.9346,0.9988,1.0000,32
+delayed_lever,200,Learned ACCT - learned return-eq CF transport,1.1359,1.1064,1.1652,1.0000,32
+delayed_lever,200,Learned ACCT - learned AT-CF,0.0929,0.0790,0.1064,0.9688,32
+pair_gate,200,ACCT - uniform transport,1.2972,1.2653,1.3283,1.0000,32
+pair_gate,200,ACCT - CF transport-only,1.1707,1.1383,1.2015,1.0000,32
+pair_gate,200,ACCT - return-eq CF transport,1.2354,1.2036,1.2651,1.0000,32
+pair_gate,200,ACCT - agent-time CF,0.1466,0.1278,0.1649,1.0000,32
+pair_gate,200,ACCT - sampled Shapley,0.1147,0.0718,0.1566,0.8125,32
+pair_gate,200,Learned ACCT - learned CF transport,0.9318,0.9014,0.9631,1.0000,32
+pair_gate,200,Learned ACCT - learned return-eq CF transport,0.9756,0.9453,1.0072,1.0000,32
+pair_gate,200,Learned ACCT - learned AT-CF,0.1361,0.1198,0.1522,1.0000,32

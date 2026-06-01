@@ -1,0 +1,10 @@
+# Optional dependencies for experiments/run_epymarl_smoke.py.
+# These are not required for the lightweight ACCT unit tests.
+PyYAML>=6.0
+lbforaging>=2.0
+sacred>=0.8
+tensorboard-logger>=0.1
+probscale>=0.2
+snakeviz>=2.2
+setuptools<81
+git+https://github.com/uoe-agents/smaclite.git

@@ -1,0 +1,16 @@
+{
+  "appendix_start_page": 11,
+  "checklist_start_page": 21,
+  "checks": {
+    "appendix_after_main": true,
+    "checklist_after_appendix": true,
+    "latex_log_clean": true,
+    "main_page_budget": true,
+    "total_pages_consistent": true
+  },
+  "log_failures": {},
+  "main_end_page": 8,
+  "max_main_pages": 9,
+  "status": "PASS",
+  "total_pages": 23
+}

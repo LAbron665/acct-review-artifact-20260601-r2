@@ -1,0 +1,7 @@
+env,method,metric,mean,std,seeds,final_episode
+rware-tiny-2ag-easy-v2,rware_ppo_shared,greedy_final,0.0000,0.0000,8,300
+rware-tiny-2ag-easy-v2,rware_ppo_shared,sample_final,0.0000,0.0000,8,300
+rware-tiny-2ag-easy-v2,rware_ppo_learned_agent_time_cf,greedy_final,0.0000,0.0000,8,300
+rware-tiny-2ag-easy-v2,rware_ppo_learned_agent_time_cf,sample_final,0.0000,0.0000,8,300
+rware-tiny-2ag-easy-v2,rware_ppo_learned_acct,greedy_final,0.0000,0.0000,8,300
+rware-tiny-2ag-easy-v2,rware_ppo_learned_acct,sample_final,0.0000,0.0000,8,300

@@ -1,0 +1,5 @@
+env,episode,metric,comparison,mean_diff,ci95_low,ci95_high,win_rate,paired_seeds
+lbf_3x3_2p1f_coop,500,sample_return,lbf_ppo_learned_acct - lbf_ppo_shared,-0.1406,-0.2656,-0.0156,0.1250,8
+lbf_3x3_2p1f_coop,500,greedy_return,lbf_ppo_learned_acct - lbf_ppo_shared,0.0078,0.0000,0.0234,0.1250,8
+lbf_3x3_2p1f_coop,500,sample_return,lbf_ppo_learned_agent_time_cf - lbf_ppo_shared,-0.1875,-0.3125,-0.0625,0.1250,8
+lbf_3x3_2p1f_coop,500,greedy_return,lbf_ppo_learned_agent_time_cf - lbf_ppo_shared,0.0312,0.0000,0.0625,0.3750,8

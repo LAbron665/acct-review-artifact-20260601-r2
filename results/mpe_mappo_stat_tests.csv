@@ -1,0 +1,9 @@
+env,episode,metric,comparison,mean_diff,ci95_low,ci95_high,win_rate,paired_seeds
+delayed_simple_spread_mappo,300,sample_return,mappo_gae_plus_acct - mappo_shared_gae,-0.0276,-0.0831,0.0247,0.5000,8
+delayed_simple_spread_mappo,300,greedy_return,mappo_gae_plus_acct - mappo_shared_gae,0.0010,-0.0349,0.0346,0.5000,8
+delayed_simple_spread_mappo,300,sample_return,mappo_gae_plus_agent_time_cf - mappo_shared_gae,-0.0036,-0.0435,0.0439,0.2500,8
+delayed_simple_spread_mappo,300,greedy_return,mappo_gae_plus_agent_time_cf - mappo_shared_gae,0.0041,-0.0640,0.0766,0.3750,8
+delayed_simple_spread_mappo,300,sample_return,mappo_learned_acct - mappo_shared_gae,-0.0217,-0.0819,0.0203,0.3750,8
+delayed_simple_spread_mappo,300,greedy_return,mappo_learned_acct - mappo_shared_gae,-0.1246,-0.2824,-0.0274,0.2500,8
+delayed_simple_spread_mappo,300,sample_return,mappo_learned_agent_time_cf - mappo_shared_gae,-0.0564,-0.1056,-0.0061,0.1250,8
+delayed_simple_spread_mappo,300,greedy_return,mappo_learned_agent_time_cf - mappo_shared_gae,-0.0259,-0.0884,0.0240,0.2500,8

@@ -1,0 +1,34 @@
+check,key,status,detail
+citation_defined,agarwal2021rliable,PASS,Deep Reinforcement Learning at the Edge of the Statistical Precipice
+citation_defined,arjona2019rudder,PASS,{RUDDER}: Return Decomposition for Delayed Rewards
+citation_defined,chen2024stas,PASS,{STAS}: Spatial-Temporal Return Decomposition for Solving Sparse Rewards Problems in Multi-Agent Reinforcement Learning
+citation_defined,chen2026whomatters,PASS,Who Matters Matters: Agent-Specific Conservative Offline {MARL}
+citation_defined,ellis2023smacv2,PASS,{SMACv2}: An Improved Benchmark for Cooperative Multi-Agent Reinforcement Learning
+citation_defined,foerster2018coma,PASS,Counterfactual Multi-Agent Policy Gradients
+citation_defined,kapoor2025tar2,PASS,Redistributing Rewards Across Time and Agents for Multi-Agent Reinforcement Learning
+arxiv_locator,kapoor2025tar2,PASS,"arXiv-style entries should include a DOI, URL, or eprint"
+citation_defined,li2021scc,PASS,Shapley Counterfactual Credits for Multi-Agent Reinforcement Learning
+citation_defined,liang2025async,PASS,Asynchronous Credit Assignment for Multi-Agent Reinforcement Learning
+citation_defined,lowe2017maddpg,PASS,Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments
+citation_defined,papoudakis2021benchmarking,PASS,Benchmarking Multi-Agent Deep Reinforcement Learning Algorithms in Cooperative Tasks
+citation_defined,rashid2018qmix,PASS,{QMIX}: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning
+citation_defined,rashid2020wqmix,PASS,Weighted {QMIX}: Expanding Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning
+citation_defined,samvelyan2019smac,PASS,The StarCraft Multi-Agent Challenge
+citation_defined,she2022ata,PASS,Agent-Time Attention for Sparse Rewards Multi-Agent Reinforcement Learning
+citation_defined,son2019qtran,PASS,{QTRAN}: Learning to Factorize with Transformation for Cooperative Multi-Agent Reinforcement Learning
+citation_defined,sunehag2018vdn,PASS,Value-Decomposition Networks For Cooperative Multi-Agent Learning Based on Team Reward
+citation_defined,terry2021pettingzoo,PASS,{PettingZoo}: Gym for Multi-Agent Reinforcement Learning
+citation_defined,triantafyllou2025counterfactual,PASS,Counterfactual Effect Decomposition in Multi-Agent Sequential Decision Making
+citation_defined,tumer2007distributed,PASS,Distributed Agent-Based Air Traffic Flow Management
+citation_defined,wang2021dop,PASS,{DOP}: Off-Policy Multi-Agent Decomposed Policy Gradients
+citation_defined,wang2021qplex,PASS,{QPLEX}: Duplex Dueling Multi-Agent {Q}-Learning
+citation_defined,wang2022shaq,PASS,{SHAQ}: Incorporating Shapley Value Theory into Multi-Agent {Q}-Learning
+citation_defined,wolpert2002optimal,PASS,Optimal Payoff Functions for Members of Collectives
+citation_defined,xiao2022arel,PASS,Agent-Temporal Attention for Reward Redistribution in Episodic Multi-Agent Reinforcement Learning
+arxiv_locator,xiao2022arel,PASS,"arXiv-style entries should include a DOI, URL, or eprint"
+citation_defined,yu2022mappo,PASS,The Surprising Effectiveness of {PPO} in Cooperative Multi-Agent Games
+citation_defined,yu2026magic,PASS,{MAGIC}: Multi-Step Advantage-Gated Causal Influence for Multi-agent Reinforcement Learning
+arxiv_locator,yu2026magic,PASS,"arXiv-style entries should include a DOI, URL, or eprint"
+citation_defined,zhang2024cast,PASS,A Causality-Inspired Spatial-Temporal Return Decomposition Approach for Multi-Agent Reinforcement Learning
+citation_defined,zhao2025maca,PASS,Multi-level Advantage Credit Assignment for Cooperative Multi-Agent Reinforcement Learning
+citation_defined,zhou2020lica,PASS,Learning Implicit Credit Assignment for Cooperative Multi-Agent Reinforcement Learning

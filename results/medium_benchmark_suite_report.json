@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "selected": [
+    "mpe-ppo",
+    "mpe-mappo",
+    "lbf",
+    "rware"
+  ],
+  "summary": "results/medium_benchmark_summary.csv",
+  "stats": "results/medium_benchmark_stat_tests.csv",
+  "commands": [
+    {
+      "benchmark": "mpe-ppo",
+      "command": "skip-existing",
+      "returncode": 0,
+      "seconds": 0.0,
+      "output_tail": "results/medium_mpe_ppo_results.csv already has 600 episodes and 16 seeds"
+    },
+    {
+      "command": ".venv/bin/python experiments/summarize_mpe_results.py --input results/medium_mpe_ppo_results.csv --summary results/medium_mpe_ppo_summary.csv --methods ppo_shared ppo_learned_agent_time_cf ppo_learned_agent_shapley ppo_learned_acct ppo_learned_directional_acct",
+      "returncode": 0,
+      "seconds": 0.07,
+      "output_tail": "wrote summary to results/medium_mpe_ppo_summary.csv\n",
+      "benchmark": "mpe-ppo-summary"
+    },
+    {
+      "command": ".venv/bin/python experiments/analyze_mpe_statistics.py --input results/medium_mpe_ppo_results.csv --out results/medium_mpe_ppo_stat_tests.csv --baseline-method ppo_shared --episode 600 --bootstrap-samples 10000",
+      "returncode": 0,
+      "seconds": 0.09,
+      "output_tail": "wrote paired statistics to results/medium_mpe_ppo_stat_tests.csv\n",
+      "benchmark": "mpe-ppo-paired-stats"
+    },
+    {
+      "benchmark": "mpe-mappo",
+      "command": "skip-existing",
+      "returncode": 0,
+      "seconds": 0.0,
+      "output_tail": "results/medium_mpe_mappo_results.csv already has 600 episodes and 16 seeds"
+    },
+    {
+      "command": ".venv/bin/python experiments/summarize_mpe_results.py --input results/medium_mpe_mappo_results.csv --summary results/medium_mpe_mappo_summary.csv --methods mappo_shared_gae mappo_learned_agent_time_cf mappo_learned_acct mappo_gae_plus_agent_time_cf mappo_gae_plus_acct",
+      "returncode": 0,
+      "seconds": 0.07,
+      "output_tail": "wrote summary to results/medium_mpe_mappo_summary.csv\n",
+      "benchmark": "mpe-mappo-summary"
+    },
+    {
+      "command": ".venv/bin/python experiments/analyze_mpe_statistics.py --input results/medium_mpe_mappo_results.csv --out results/medium_mpe_mappo_stat_tests.csv --baseline-method mappo_shared_gae --episode 600 --bootstrap-samples 10000",
+      "returncode": 0,
+      "seconds": 0.08,
+      "output_tail": "wrote paired statistics to results/medium_mpe_mappo_stat_tests.csv\n",
+      "benchmark": "mpe-mappo-paired-stats"
+    },
+    {
+      "benchmark": "lbf",
+      "command": "skip-existing",
+      "returncode": 0,
+      "seconds": 0.0,
+      "output_tail": "results/medium_lbf_ppo_results.csv already has 1000 episodes and 16 seeds"
+    },
+    {
+      "command": ".venv/bin/python experiments/summarize_mpe_results.py --input results/medium_lbf_ppo_results.csv --summary results/medium_lbf_ppo_summary.csv --methods lbf_ppo_shared lbf_ppo_learned_agent_time_cf lbf_ppo_learned_acct",
+      "returncode": 0,
+      "seconds": 0.06,
+      "output_tail": "wrote summary to results/medium_lbf_ppo_summary.csv\n",
+      "benchmark": "lbf-summary"
+    },
+    {
+      "command": ".venv/bin/python experiments/analyze_mpe_statistics.py --input results/medium_lbf_ppo_results.csv --out results/medium_lbf_ppo_stat_tests.csv --baseline-method lbf_ppo_shared --episode 1000 --bootstrap-samples 10000",
+      "returncode": 0,
+      "seconds": 0.07,
+      "output_tail": "wrote paired statistics to results/medium_lbf_ppo_stat_tests.csv\n",
+      "benchmark": "lbf-paired-stats"
+    },
+    {
+      "benchmark": "rware",
+      "command": "skip-existing",
+      "returncode": 0,
+      "seconds": 0.0,
+      "output_tail": "results/medium_rware_ppo_results.csv already has 1000 episodes and 16 seeds"
+    },
+    {
+      "command": ".venv/bin/python experiments/summarize_mpe_results.py --input results/medium_rware_ppo_results.csv --summary results/medium_rware_ppo_summary.csv --methods rware_ppo_shared rware_ppo_learned_agent_time_cf rware_ppo_learned_acct",
+      "returncode": 0,
+      "seconds": 0.06,
+      "output_tail": "wrote summary to results/medium_rware_ppo_summary.csv\n",
+      "benchmark": "rware-summary"
+    },
+    {
+      "command": ".venv/bin/python experiments/analyze_mpe_statistics.py --input results/medium_rware_ppo_results.csv --out results/medium_rware_ppo_stat_tests.csv --baseline-method rware_ppo_shared --episode 1000 --bootstrap-samples 10000",
+      "returncode": 0,
+      "seconds": 0.07,
+      "output_tail": "wrote paired statistics to results/medium_rware_ppo_stat_tests.csv\n",
+      "benchmark": "rware-paired-stats"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+check,status,detail,next_action
+public_anonymous_url,PASS,anonymous.4open.science URL appears in the manuscript: https://anonymous.4open.science/r/acctreviewartifact20260601r2,None
+checklist_public_code_answer,PASS,checklist no longer contains the no-public-URL caveat,None
+finalize_url_report,PASS,finalize_anonymous_url.py report is PASS and matches the manuscript URL,None
+large_scale_benchmark_evidence,WARN,the draft intentionally reports no SMAC/SMACv2 or cloud-scale benchmark result,"Keep broad performance claims disabled, or run and report tuned benchmark comparisons before upgrading the claim scope."
+local_release_repo,PASS,prepared release repository report is PASS,None
+publish_dry_run,NOT_READY,publish helper dry-run report is absent or not PASS,Run publish_anonymous_release_repo.py --dry-run with the intended fresh remote.
